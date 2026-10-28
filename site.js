@@ -43,7 +43,6 @@
     changeImage('hero-screenshot', heroURL, `Todo MD ${mode === 'dark' ? '深色' : '浅色'}${view === 'tasks' ? '待办与子步骤进度' : 'Markdown 阅读'}实际界面，使用演示数据。`);
     changeImage('theme-screenshot', `assets/tasks-${mode}-${accent}.png`, `${names[accent]}主题的 Todo MD ${mode === 'dark' ? '深色' : '浅色'}实际界面，使用演示数据。`);
     document.getElementById('theme-name').textContent = names[accent];
-    document.getElementById('hero-caption').textContent = view === 'tasks' ? '快速记下待办，点开详情继续。优先级、子步骤和参考文档都在手边。' : '一篇标准 Markdown，一处安静的阅读空间。随时切换编辑、阅读或分栏。';
   }
   document.getElementById('appearance-toggle').addEventListener('click', () => {
     preference = theme() === 'dark' ? 'light' : 'dark';
