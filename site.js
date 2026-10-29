@@ -10,7 +10,7 @@
   const theme = () => preference === 'light' || preference === 'dark' ? preference : systemTheme.matches ? 'dark' : 'light';
   let imageRequest = 0;
   function changeImage(id, url, description) {
-    url += "?v=110";
+    url += "?v=111";
     const img = document.getElementById(id);
     // Remove the static no-JS fallback only once the live image is available.
     const request = ++imageRequest;
