@@ -10,7 +10,7 @@
   const theme = () => preference === 'light' || preference === 'dark' ? preference : systemTheme.matches ? 'dark' : 'light';
   let imageRequest = 0;
   function changeImage(id, url, description) {
-    url += "?v=120";
+    url += "?v=130";
     const img = document.getElementById(id);
     // Remove the static no-JS fallback only once the live image is available.
     const request = ++imageRequest;
@@ -40,8 +40,8 @@
     document.getElementById('appearance-label').textContent = mode === 'dark' ? '深色' : '浅色';
     document.querySelectorAll('[data-view]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.view === view)));
     document.querySelectorAll('[data-accent]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.accent === accent)));
-    const heroURL = view === 'tasks' ? `assets/tasks-${mode}-blue.png` : `assets/markdown-${mode}.png`;
-    changeImage('hero-screenshot', heroURL, `Todo MD ${mode === 'dark' ? '深色' : '浅色'}${view === 'tasks' ? '待办与子步骤进度' : 'Markdown 阅读'}实际界面，使用演示数据。`);
+    const heroURL = view === 'tasks' ? `assets/tasks-${mode}-blue.png` : `assets/${view}-${mode}.png`;
+    changeImage('hero-screenshot', heroURL, `Todo MD ${mode === 'dark' ? '深色' : '浅色'}${view === 'tasks' ? '待办与子步骤进度' : ({markdown:'Markdown',pdf:'PDF',epub:'EPUB'}[view] + ' 阅读')}实际界面，使用演示数据。`);
     changeImage('theme-screenshot', `assets/tasks-${mode}-${accent}.png`, `${names[accent]}主题的 Todo MD ${mode === 'dark' ? '深色' : '浅色'}实际界面，使用演示数据。`);
     document.getElementById('theme-name').textContent = names[accent];
   }
