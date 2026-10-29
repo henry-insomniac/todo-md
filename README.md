@@ -2,7 +2,7 @@
 
 [官网与下载](https://henry-insomniac.github.io/todo-md/)
 
-Todo MD 是一个原生 macOS 应用，将待办、Markdown 写作、PDF 与 EPUB 阅读、轻量进度放在一起。支持 macOS 14+、Apple Silicon 与 Intel。
+Todo MD 是一个原生 macOS 应用，将待办、Markdown 写作、PDF 与 EPUB 阅读、轻量进度放在一起。可选 AI 助手支持自备 API Key，总结、润色、分析 Markdown 与待办；MCP 可连接外部服务或共享指定内容。支持 macOS 14+、Apple Silicon 与 Intel。
 
 ## 下载
 
