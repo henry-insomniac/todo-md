@@ -2,7 +2,13 @@
 
 [官网与下载](https://henry-insomniac.github.io/todo-md/)
 
-Todo MD 是一个原生 macOS 应用，将待办、Markdown 写作、PDF 与 EPUB 阅读、轻量进度放在一起。支持 Word（DOCX）、Excel（XLSX / UTF-8 CSV）预览与基础编辑，编辑结果另存副本；彩色文件类型图标让文档更易识别。1.9.0 重新设计聊天布局，使用右侧话题列表、紧凑输入区和消息悬停操作，支持消息原位编辑、输入框展开、回车发送、Shift + 回车换行及图片粘贴。支持图片理解、图片生成与内置可选 DeepSeek Harness。图片功能需兼容模型。支持 AI 聊天，可引用资料、生成文档与待办，预览确认后保存并支持撤销。可自备 API Key 或连接 Magpie 本机网关选择模型，切换服务商保留原配置。AI 助手也可总结、润色、分析 Markdown 与待办；MCP 可连接外部服务或共享指定内容。支持 macOS 14+、Apple Silicon 与 Intel。
+Todo MD 是原生 macOS 待办与文档应用，支持 Markdown、PDF、EPUB 阅读，以及 Word（DOCX）、Excel（XLSX / CSV）预览与基础编辑。编辑 Office 文档时另存副本，保留原件。
+
+1.11.0 新增当前文档与跨文档全文搜索：按文件查看匹配数量、上下文与位置，点击跳转到正文、页码、章节或单元格；支持类型筛选、大小写和完整词匹配。使用 ⌘F / ⌘⇧F 搜索，⌘/ 打开快捷键总览。扫描 PDF 暂不支持 OCR。
+
+可选 AI 支持聊天、总结、润色、图片理解与生成，以及预览确认后创建文档和待办。自备 API Key 或连接 Magpie；Harness 运行组件、工具和 Skill 按需安装。图片功能需兼容模型，AI 可关闭。
+
+支持 macOS 14+，提供 Apple Silicon / Intel 通用安装包。
 
 ## 下载
 
